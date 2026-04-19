@@ -85,7 +85,7 @@ function CompanyDetail() {
       <section className="mx-auto max-w-5xl px-6 py-24">
         <div className="font-mono text-[0.6rem] uppercase tracking-[0.3em] text-dim">What it does</div>
         <div className="mt-10 grid gap-px bg-border md:grid-cols-3">
-          {sub.bullets.map((b) => (
+          {sub.bullets.map((b: { title: string; body: string }) => (
             <div key={b.title} className="flex flex-col gap-3 bg-background p-8">
               <div className="h-px w-8" style={{ background: sub.accent }} />
               <h3 className="text-lg font-semibold uppercase tracking-wider text-light">{b.title}</h3>
