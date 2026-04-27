@@ -46,31 +46,31 @@
 :root {
   --radius: 0.5rem;
 
-  /* Synapses brand palette — dark editorial */
-  --background: oklch(0.07 0 0);          /* #080808 */
-  --foreground: oklch(0.88 0 0);          /* #e0e0e0 */
-  --card: oklch(0.09 0 0);                /* #0d0d0d */
+  /* Synapses brand palette — dark editorial (lifted slightly off pure black) */
+  --background: oklch(0.12 0 0);          /* ~#1a1a1a */
+  --foreground: oklch(0.9 0 0);           /* #e6e6e6 */
+  --card: oklch(0.15 0 0);                /* ~#222 */
   --card-foreground: oklch(0.88 0 0);
-  --popover: oklch(0.09 0 0);
+  --popover: oklch(0.15 0 0);
   --popover-foreground: oklch(0.88 0 0);
   --primary: oklch(0.88 0 0);             /* light silver */
   --primary-foreground: oklch(0.07 0 0);
-  --secondary: oklch(0.14 0 0);
+  --secondary: oklch(0.18 0 0);
   --secondary-foreground: oklch(0.88 0 0);
-  --muted: oklch(0.14 0 0);
-  --muted-foreground: oklch(0.6 0 0);     /* #8a8a8a silver */
-  --accent: oklch(0.14 0 0);
+  --muted: oklch(0.18 0 0);
+  --muted-foreground: oklch(0.65 0 0);
+  --accent: oklch(0.18 0 0);
   --accent-foreground: oklch(0.88 0 0);
   --destructive: oklch(0.6 0.22 25);
   --destructive-foreground: oklch(0.95 0 0);
-  --border: oklch(0.16 0 0);              /* #1a1a1a */
-  --input: oklch(0.16 0 0);
-  --ring: oklch(0.4 0 0);
+  --border: oklch(0.24 0 0);              /* ~#333 — more visible separators */
+  --input: oklch(0.24 0 0);
+  --ring: oklch(0.45 0 0);
 
-  --silver: oklch(0.6 0 0);               /* #8a8a8a */
-  --light: oklch(0.87 0 0);               /* #d8d8d8 */
-  --dim: oklch(0.32 0 0);                 /* #3a3a3a */
-  --ghost: oklch(0.18 0 0);               /* #1e1e1e */
+  --silver: oklch(0.68 0 0);              /* lifted from #8a8a8a */
+  --light: oklch(0.92 0 0);
+  --dim: oklch(0.4 0 0);
+  --ghost: oklch(0.22 0 0);
 
   --accent-purple: oklch(0.55 0.25 295);  /* #7c3aed InwitClipps */
   --accent-pink: oklch(0.66 0.22 10);     /* #ff4d6d InwitHQ */
@@ -79,8 +79,8 @@
 
 .dark {
   /* same — site is always dark */
-  --background: oklch(0.07 0 0);
-  --foreground: oklch(0.88 0 0);
+  --background: oklch(0.12 0 0);
+  --foreground: oklch(0.9 0 0);
 }
 
 @layer base {
