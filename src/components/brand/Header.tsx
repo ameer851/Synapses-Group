@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { NodeMark } from "./NodeMark";
+import { BurstMark } from "./BurstMark";
 import { Menu, X } from "lucide-react";
 
 const navItems = [
@@ -14,9 +14,16 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <NodeMark size={28} />
-          <span className="text-xs uppercase tracking-[0.3em] text-light">Synapses</span>
+        <Link to="/" className="flex items-center gap-4" onClick={() => setOpen(false)}>
+          <BurstMark size={52} />
+          <span className="flex flex-col leading-none">
+            <span className="text-lg font-semibold uppercase tracking-[0.32em] text-light">
+              Synapses
+            </span>
+            <span className="mt-1 text-[0.6rem] uppercase tracking-[0.4em] text-silver/70">
+              Group
+            </span>
+          </span>
         </Link>
         <nav className="hidden items-center gap-1 md:flex">
           {navItems.map((item) => (
