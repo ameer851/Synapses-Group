@@ -4,9 +4,10 @@ import { BurstMark } from "./BurstMark";
 import { Menu, X } from "lucide-react";
 
 const navItems = [
-  { to: "/companies" as const, label: "Companies" },
-  { to: "/about" as const, label: "About" },
-  { to: "/contact" as const, label: "Contact" },
+  { href: "#who", label: "Who" },
+  { href: "#entities", label: "Entities" },
+  { href: "#operating", label: "Operating Model" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export function Header() {
@@ -27,15 +28,13 @@ export function Header() {
         </Link>
         <nav className="hidden items-center gap-1 md:flex">
           {navItems.map((item) => (
-            <Link
-              key={item.to}
-              to={item.to}
-              activeProps={{ className: "text-light border-dim" }}
-              inactiveProps={{ className: "text-silver/70 border-transparent hover:text-light" }}
-              className="border px-4 py-2 text-[0.7rem] uppercase tracking-[0.2em] transition-colors"
+            <a
+              key={item.href}
+              href={item.href}
+              className="border border-transparent px-4 py-2 text-[0.7rem] uppercase tracking-[0.2em] text-silver/70 transition-colors hover:border-dim hover:text-light"
             >
               {item.label}
-            </Link>
+            </a>
           ))}
         </nav>
         <button
@@ -50,16 +49,14 @@ export function Header() {
       {open && (
         <nav className="border-t border-border md:hidden">
           {navItems.map((item) => (
-            <Link
-              key={item.to}
-              to={item.to}
+            <a
+              key={item.href}
+              href={item.href}
               onClick={() => setOpen(false)}
-              activeProps={{ className: "text-light" }}
-              inactiveProps={{ className: "text-silver/70" }}
-              className="block border-b border-border px-6 py-4 text-xs uppercase tracking-[0.2em]"
+              className="block border-b border-border px-6 py-4 text-xs uppercase tracking-[0.2em] text-silver/80"
             >
               {item.label}
-            </Link>
+            </a>
           ))}
         </nav>
       )}
