@@ -1,6 +1,7 @@
 const items = [
-  "InwitClipps", "·", "InwitHQ Media", "·", "Inwit AI", "·",
-  "Synapses Group", "·", "Autonomous Intelligence", "·", "EST. 2025", "·",
+  "InwitHQ Media", "·", "InwitClipps", "·", "Synapses Software", "·",
+  "Synapses Gaming", "·", "SYNA · AI CIO", "·",
+  "Synapses Group", "·", "EST. 2026", "·",
 ];
 
 export function Ticker() {
