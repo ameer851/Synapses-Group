@@ -136,7 +136,7 @@ function WhoWeAre() {
 function OrgFlow() {
   const layers = [
     { tag: "Holding", title: "Synapses Group", note: "Equity · Governance · Capital" },
-    { tag: "Divisions", title: "Media · Software · Gaming", note: "InwitHQ · InwitClipps · Software · Gaming" },
+    { tag: "Divisions", title: "Media · Software · Gaming", note: "InwitHQ · Media Clipping · Software · Gaming" },
     { tag: "AI Layer", title: "SYNA — Board Observer / CIO", note: "Persistent intelligence · Audit trails" },
   ];
   return (
@@ -255,7 +255,7 @@ function Contact() {
     const body = encodeURIComponent(`${form.message}\n\n— ${form.name}`);
     const subject = encodeURIComponent(`Inquiry from ${form.name || "site"}`);
     if (typeof window !== "undefined") {
-      window.location.href = `mailto:hello@synapsesgroup.org?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:hello@synapsesgroup.co?subject=${subject}&body=${body}`;
     }
     setSent(true);
   };
@@ -273,11 +273,11 @@ function Contact() {
               Drop us a line. We read everything that comes in.
             </p>
             <a
-              href="mailto:hello@synapsesgroup.org"
+              href="mailto:hello@synapsesgroup.co"
               className="mt-6 inline-flex items-center gap-2 text-lg font-semibold tracking-tight text-light hover:underline underline-offset-4"
             >
               <Mail className="h-4 w-4 text-silver" />
-              hello@synapsesgroup.org
+              hello@synapsesgroup.co
             </a>
           </div>
 

@@ -30,8 +30,8 @@ export const entities: Entity[] = [
     head: "AI Operations Cluster",
   },
   {
-    key: "inwitclipps",
-    name: "InwitClipps",
+    key: "media-clipping",
+    name: "Media Clipping Platform",
     sector: "Software · Media",
     desc: "AI-powered video clipping platform. YouTube → viral clips in seconds.",
     status: { label: "Beta", color: "#eab308", dot: "🟡" },

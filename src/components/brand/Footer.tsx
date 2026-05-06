@@ -9,7 +9,7 @@ export function Footer() {
           Synapses Group © 2026
         </div>
         <div className="font-mono text-[0.6rem] uppercase tracking-[0.3em] text-dim">
-          Autonomous Intelligence · synapsesgroup.org
+          Autonomous Intelligence · synapsesgroup.co
         </div>
       </div>
     </footer>

@@ -31,7 +31,7 @@ export const Route = createRootRoute({
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Synapses Group — Autonomous Intelligence" },
-      { name: "description", content: "A holding company building AI-operated businesses. InwitClipps · InwitHQ · Inwit AI." },
+      { name: "description", content: "A holding company building AI-operated businesses. Media Clipping Platform · InwitHQ · Synapses AI." },
       { name: "author", content: "Synapses Group" },
       { name: "theme-color", content: "#080808" },
       { property: "og:title", content: "Synapses Group" },

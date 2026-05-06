@@ -1,5 +1,5 @@
 const items = [
-  "InwitHQ Media", "·", "InwitClipps", "·", "Synapses Software", "·",
+  "InwitHQ Media", "·", "Media Clipping", "·", "Synapses Software", "·",
   "Synapses Gaming", "·", "SYNA · AI CIO", "·",
   "Synapses Group", "·", "EST. 2026", "·",
 ];
