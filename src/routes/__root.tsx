@@ -30,17 +30,42 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Synapses Group — Autonomous Intelligence" },
-      { name: "description", content: "A holding company building AI-operated businesses. Media Clipping Platform · InwitHQ · Synapses AI." },
+      { title: "Synapses Group — AI-Integrated Holding Company" },
+      { name: "description", content: "Synapses Group is an AI-integrated holding company operating across media, software, and gaming. Three founders. One AI officer. Multiple businesses." },
       { name: "author", content: "Synapses Group" },
       { name: "theme-color", content: "#080808" },
-      { property: "og:title", content: "Synapses Group" },
-      { property: "og:description", content: "Autonomous media & technology group." },
+      { property: "og:title", content: "Synapses Group — AI-Integrated Holding Company" },
+      { property: "og:description", content: "Three founders. One AI officer. Multiple businesses across media, software, and gaming." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
+      { property: "og:url", content: "https://synapsesgroup.co" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Synapses Group",
+          "url": "https://synapsesgroup.co",
+          "description": "An AI-integrated holding company building and operating businesses across media, software, and gaming.",
+          "email": "hello@synapsesgroup.co",
+          "foundingDate": "2026",
+          "founder": [
+            { "@type": "Person", "name": "Ali Abubakar" }
+          ],
+          "knowsAbout": [
+            "Artificial Intelligence",
+            "Media",
+            "Software",
+            "Gaming"
+          ]
+        }),
+      },
     ],
     links: [
       { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+      { rel: "canonical", href: "https://synapsesgroup.co" },
       { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
