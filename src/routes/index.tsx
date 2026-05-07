@@ -55,31 +55,31 @@ function Hero() {
         <NodeMark size={420} bright />
       </div>
 
-      <div className="relative mx-auto max-w-4xl px-6 pt-20 pb-24 text-center md:pt-28 md:pb-32">
+      <div className="relative mx-auto max-w-4xl px-6 pt-16 pb-16 text-center md:pt-28 md:pb-32">
         <div className="animate-fade-up font-mono text-[0.62rem] uppercase tracking-[0.35em] text-dim">
           Synapses Group · Holding Company · Est. 2026
         </div>
 
-        <div className="mt-10 flex justify-center animate-fade-up" style={{ animationDelay: "0.1s" }}>
+        <div className="mt-6 flex justify-center animate-fade-up max-sm:hidden md:mt-10" style={{ animationDelay: "0.1s" }}>
           <NeuralPulseCanvas />
         </div>
 
         <h1
-          className="mx-auto mt-10 max-w-3xl text-4xl font-semibold tracking-tight text-light md:text-6xl animate-fade-up"
+          className="mx-auto mt-6 max-w-3xl text-3xl font-semibold tracking-tight text-light md:mt-10 md:text-6xl animate-fade-up"
           style={{ animationDelay: "0.2s" }}
         >
           Three founders. <span className="font-serif italic text-silver">One AI officer.</span> Multiple businesses.
         </h1>
 
         <p
-          className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-silver md:text-lg animate-fade-up"
+          className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-silver md:mt-6 md:text-lg animate-fade-up"
           style={{ animationDelay: "0.3s" }}
         >
           Synapses Group builds, operates, and scales AI-powered businesses across media, software, and gaming.
         </p>
 
         <div
-          className="mt-10 flex flex-wrap justify-center gap-3 animate-fade-up"
+          className="mt-6 flex flex-wrap justify-center gap-3 animate-fade-up md:mt-10"
           style={{ animationDelay: "0.4s" }}
         >
           <a
