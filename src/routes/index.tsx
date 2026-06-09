@@ -160,7 +160,7 @@ function Entities() {
       <div className="mx-auto max-w-6xl px-6 py-24">
         <div className="mb-12 max-w-2xl">
           <div className="font-mono text-[0.6rem] uppercase tracking-[0.3em] text-dim">Our entities</div>
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-light md:text-4xl">Five operating units. One executive layer.</h2>
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-light md:text-4xl">Four operating units. One executive layer.</h2>
           <p className="mt-3 font-serif italic text-silver">
             Each entity runs under its own cluster, supervised by SYNA and reviewed by the human board.
           </p>
