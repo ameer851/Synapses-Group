@@ -30,33 +30,17 @@ export const entities: Entity[] = [
     head: "AI Operations Cluster",
   },
   {
-    key: "media-clipping",
-    name: "Media Clipping Platform",
-    sector: "Software · Media",
-    desc: "AI-powered video clipping platform. YouTube → viral clips in seconds.",
-    status: { label: "Beta", color: "#eab308", dot: "🟡" },
-    accent: "var(--accent-purple)",
-    detail:
-      "Long-form video in, platform-ready clips out. TrendSync scores every clip against live cross-platform trend data before release.",
-    metrics: [
-      { label: "Stage", value: "Private beta" },
-      { label: "Engine", value: "TrendSync" },
-      { label: "Surfaces", value: "TikTok · Shorts · X" },
-    ],
-    head: "Product Cluster",
-  },
-  {
     key: "software",
     name: "Synapses Software",
     sector: "Software",
-    desc: "Niche SaaS products built on validated demand.",
+    desc: "Niche SaaS products and AI-powered media tools built on validated demand.",
     status: { label: "In development", color: "#3b82f6", dot: "🔵" },
     accent: "var(--accent-cyan)",
     detail:
-      "Small, opinionated SaaS shipped against demand we've already measured. No speculative launches; every product begins with a signal.",
+      "Small, opinionated SaaS shipped against demand we've already measured. Includes our AI-powered Media Clipping Platform — long-form video in, platform-ready clips out, scored against live cross-platform trend data before release. No speculative launches; every product begins with a signal.",
     metrics: [
       { label: "Approach", value: "Demand-first" },
-      { label: "Surface", value: "B2B SaaS" },
+      { label: "Surface", value: "B2B SaaS + Media Tools" },
       { label: "Cadence", value: "Quarterly" },
     ],
     head: "Engineering Cluster",
@@ -94,3 +78,4 @@ export const entities: Entity[] = [
     head: "Autonomous",
   },
 ];
+
