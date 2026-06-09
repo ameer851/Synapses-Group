@@ -36,6 +36,13 @@ export function Header() {
               {item.label}
             </a>
           ))}
+          <Link
+            to="/m1000"
+            className="border border-transparent px-4 py-2 text-[0.7rem] uppercase tracking-[0.2em] text-silver/70 transition-colors hover:border-dim hover:text-light"
+            activeProps={{ className: "border-dim text-light" }}
+          >
+            M1000
+          </Link>
         </nav>
         <button
           type="button"
@@ -58,6 +65,13 @@ export function Header() {
               {item.label}
             </a>
           ))}
+          <Link
+            to="/m1000"
+            onClick={() => setOpen(false)}
+            className="block border-b border-border px-6 py-4 text-xs uppercase tracking-[0.2em] text-silver/80"
+          >
+            M1000
+          </Link>
         </nav>
       )}
     </header>
