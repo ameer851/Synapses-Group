@@ -1,7 +1,7 @@
 const items = [
-  "InwitHQ Media", "·", "Media Clipping", "·", "Synapses Software", "·",
-  "Synapses Gaming", "·", "SYNA · AI CIO", "·",
-  "Synapses Group", "·", "EST. 2026", "·",
+  "Preserve", "·", "Extend", "·", "Connect", "·", "Compound", "·", "Inherit", "·",
+  "Synapses Capital", "·", "Synapses Technology", "·", "Synapses Vault", "·",
+  "Humanity's Continuity Company", "·",
 ];
 
 export function Ticker() {
