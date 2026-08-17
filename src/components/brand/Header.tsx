@@ -4,9 +4,10 @@ import { BurstMark } from "./BurstMark";
 import { Menu, X } from "lucide-react";
 
 const navItems = [
-  { href: "#who", label: "Who" },
-  { href: "#entities", label: "Entities" },
-  { href: "#operating", label: "Operating Model" },
+  { href: "#mission", label: "Mission" },
+  { href: "#architecture", label: "Architecture" },
+  { href: "#vault", label: "Vault" },
+  { href: "#governance", label: "Governance" },
   { href: "#contact", label: "Contact" },
 ];
 
