@@ -29,14 +29,14 @@ export function Header() {
             <Link key={item.href} to={item.href} onClick={() => setOpen(false)} className="border border-transparent px-3.5 py-2 text-[0.62rem] uppercase tracking-[0.18em] text-silver/70 transition-colors hover:border-dim hover:text-light" activeProps={{ className: "border-dim text-light" }}>{item.label}</Link>
           ))}
           <Link to="/m1000" className="border border-transparent px-3.5 py-2 text-[0.62rem] uppercase tracking-[0.18em] text-silver/70 transition-colors hover:border-dim hover:text-light" activeProps={{ className: "border-dim text-light" }}>M1000</Link>
-          <Link to="/#contact" className="ml-2 bg-light px-4 py-2 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-background transition-opacity hover:opacity-90">Connect</Link>
+          <a href="/#contact" className="ml-2 bg-light px-4 py-2 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-background transition-opacity hover:opacity-90">Connect</a>
         </nav>
         <button type="button" onClick={() => setOpen((v) => !v)} className="text-silver md:hidden" aria-label="Toggle navigation">{open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}</button>
       </div>
       {open && <nav className="border-t border-border bg-background md:hidden">
         {navItems.map((item) => <Link key={item.href} to={item.href} onClick={() => setOpen(false)} className="block border-b border-border px-6 py-4 text-xs uppercase tracking-[0.2em] text-silver/80">{item.label}</Link>)}
         <Link to="/m1000" onClick={() => setOpen(false)} className="block border-b border-border px-6 py-4 text-xs uppercase tracking-[0.2em] text-silver/80">M1000</Link>
-        <Link to="/#contact" onClick={() => setOpen(false)} className="block px-6 py-4 text-xs font-semibold uppercase tracking-[0.2em] text-light">Connect →</Link>
+        <a href="/#contact" onClick={() => setOpen(false)} className="block px-6 py-4 text-xs font-semibold uppercase tracking-[0.2em] text-light">Connect →</a>
       </nav>}
     </header>
   );
