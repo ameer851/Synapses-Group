@@ -54,7 +54,6 @@ export interface RootRouteChildren {
   CompaniesRoute: typeof CompaniesRoute
   InsightsRoute: typeof InsightsRoute
   M1000Route: typeof M1000Route
-  SynaRoute: typeof SynaRoute
 }
 
 declare module '@tanstack/react-router' {
