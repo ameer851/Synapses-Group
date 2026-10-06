@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://synapsesgroup.co/</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://synapsesgroup.co/</loc></url>
+  <url><loc>https://synapsesgroup.co/about</loc></url>
+  <url><loc>https://synapsesgroup.co/companies</loc></url>
+  <url><loc>https://synapsesgroup.co/insights</loc></url>
+  <url><loc>https://synapsesgroup.co/m1000</loc></url>
 </urlset>
