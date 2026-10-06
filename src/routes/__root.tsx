@@ -30,15 +30,17 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Synapses Group — AI-Integrated Holding Company" },
-      { name: "description", content: "Synapses Group is an AI-integrated holding company operating across media, software, and gaming. Three founders. One AI officer. Multiple businesses." },
+      { title: "Synapses Group — Build. Acquire. Compound." },
+      { name: "description", content: "Synapses Group is a diversified holding company building and acquiring businesses across technology, energy, infrastructure, media, bio, and continuity." },
       { name: "author", content: "Synapses Group" },
       { name: "theme-color", content: "#080808" },
-      { property: "og:title", content: "Synapses Group — AI-Integrated Holding Company" },
-      { property: "og:description", content: "Three founders. One AI officer. Multiple businesses across media, software, and gaming." },
+      { property: "og:title", content: "Synapses Group — Build. Acquire. Compound." },
+      { property: "og:description", content: "A diversified holding company building and acquiring exceptional businesses across strategic industries." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://synapsesgroup.co" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Synapses Group — Build. Acquire. Compound." },
+      { name: "twitter:description", content: "A diversified holding company building and acquiring exceptional businesses across strategic industries." },
     ],
     scripts: [
       {
@@ -48,17 +50,21 @@ export const Route = createRootRoute({
           "@type": "Organization",
           "name": "Synapses Group",
           "url": "https://synapsesgroup.co",
-          "description": "An AI-integrated holding company building and operating businesses across media, software, and gaming.",
+          "description": "A diversified holding company building and acquiring businesses across technology, energy, infrastructure, media, bio, and continuity.",
           "email": "hello@synapsesgroup.co",
           "foundingDate": "2026",
           "founder": [
             { "@type": "Person", "name": "Ali Abubakar" }
           ],
           "knowsAbout": [
-            "Artificial Intelligence",
+            "Holding Companies",
+            "Capital Allocation",
+            "Technology",
+            "Energy",
+            "Infrastructure",
             "Media",
-            "Software",
-            "Gaming"
+            "Biotechnology",
+            "Business Acquisition"
           ]
         }),
       },
