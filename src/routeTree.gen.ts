@@ -10,11 +10,29 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as M1000RouteImport } from './routes/m1000'
+import { Route as InsightsRouteImport } from './routes/insights'
+import { Route as CompaniesRouteImport } from './routes/companies'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
 const M1000Route = M1000RouteImport.update({
   id: '/m1000',
   path: '/m1000',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InsightsRoute = InsightsRouteImport.update({
+  id: '/insights',
+  path: '/insights',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CompaniesRoute = CompaniesRouteImport.update({
+  id: '/companies',
+  path: '/companies',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -25,27 +43,39 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/companies': typeof CompaniesRoute
+  '/insights': typeof InsightsRoute
   '/m1000': typeof M1000Route
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/companies': typeof CompaniesRoute
+  '/insights': typeof InsightsRoute
   '/m1000': typeof M1000Route
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/companies': typeof CompaniesRoute
+  '/insights': typeof InsightsRoute
   '/m1000': typeof M1000Route
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/m1000'
+  fullPaths: '/' | '/about' | '/companies' | '/insights' | '/m1000'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/m1000'
-  id: '__root__' | '/' | '/m1000'
+  to: '/' | '/about' | '/companies' | '/insights' | '/m1000'
+  id: '__root__' | '/' | '/about' | '/companies' | '/insights' | '/m1000'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  CompaniesRoute: typeof CompaniesRoute
+  InsightsRoute: typeof InsightsRoute
   M1000Route: typeof M1000Route
 }
 
@@ -56,6 +86,27 @@ declare module '@tanstack/react-router' {
       path: '/m1000'
       fullPath: '/m1000'
       preLoaderRoute: typeof M1000RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/insights': {
+      id: '/insights'
+      path: '/insights'
+      fullPath: '/insights'
+      preLoaderRoute: typeof InsightsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/companies': {
+      id: '/companies'
+      path: '/companies'
+      fullPath: '/companies'
+      preLoaderRoute: typeof CompaniesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -70,6 +121,9 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  CompaniesRoute: CompaniesRoute,
+  InsightsRoute: InsightsRoute,
   M1000Route: M1000Route,
 }
 export const routeTree = rootRouteImport
