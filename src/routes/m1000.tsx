@@ -22,7 +22,16 @@ export const Route = createFileRoute("/m1000")({
         content:
           "Equipping underserved youth across Africa with the tools, mentorship, and infrastructure to build futures in STEM.",
       },
+      { property: "og:type", content: "website" },
       { property: "og:url", content: "https://synapsesgroup.co/m1000" },
+      { property: "og:image", content: "https://synapsesgroup.co/og-image.png" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      {
+        property: "og:image:alt",
+        content: "Synapses Group — Build. Acquire. Compound.",
+      },
+      { name: "twitter:image", content: "https://synapsesgroup.co/og-image.png" },
     ],
     links: [{ rel: "canonical", href: "https://synapsesgroup.co/m1000" }],
   }),
