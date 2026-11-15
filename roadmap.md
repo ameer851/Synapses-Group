@@ -1,5 +1,6 @@
 # Site SEO handoff
 
+- [ ] Configure production build output in `dist/` and pass preview checks.
 - [ ] Apply Tier 1 metadata, social image, and sitemap updates.
 - [ ] Add About, Companies, and Insights pages with distinct metadata and shared navigation.
 - [ ] Verify route rendering, canonical tags, sitemap, and preview diagnostics.

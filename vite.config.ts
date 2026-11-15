@@ -10,6 +10,9 @@ export default defineConfig({
     tanstackStart(),
     nitro({
       preset: "vercel",
+      output: {
+        dir: "{{ rootDir }}/dist",
+      },
     }),
     viteReact(),
     tailwindcss(),
