@@ -11,7 +11,7 @@ export default defineConfig({
     nitro({
       preset: "vercel",
       output: {
-        dir: "{{ rootDir }}/dist",
+        dir: "dist",
       },
     }),
     viteReact(),
