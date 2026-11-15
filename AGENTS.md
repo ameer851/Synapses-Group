@@ -1,1 +1,2 @@
 - Use distinct TanStack leaf routes for shareable informational pages so each page keeps its own URL and metadata.
+- Write Nitro production output to `dist/` because Lovable preview checks consume that directory.
