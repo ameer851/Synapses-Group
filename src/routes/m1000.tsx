@@ -31,6 +31,7 @@ export const Route = createFileRoute("/m1000")({
         property: "og:image:alt",
         content: "Synapses Group — Build. Acquire. Compound.",
       },
+      { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:image", content: "https://synapsesgroup.co/og-image.png" },
     ],
     links: [{ rel: "canonical", href: "https://synapsesgroup.co/m1000" }],

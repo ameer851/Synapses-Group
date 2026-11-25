@@ -1,2 +1,4 @@
 - Use distinct TanStack leaf routes for shareable informational pages so each page keeps its own URL and metadata.
 - Write Nitro production output to `dist/` because Lovable preview checks consume that directory.
+- Resolve the `@` Vite alias to `src/` from `import.meta.url` so OJ resolves route imports consistently.
+- Import Tailwind through `tailwindcss/index.css` so the preview uses the CSS entry rather than the package's JavaScript entry.
